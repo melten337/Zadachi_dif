@@ -1,0 +1,17 @@
+fun main()
+{
+ println("Array4")
+    println("Введите число от 2 до 10")
+    var n = readLine()!!.toInt()
+    println("Введите знаменатель:")
+        var d = readLine()!!.toInt()
+    println("Введите первый член:")
+    var a = readLine()!!.toInt()
+    val l: Array<Int> = arrayOf(0,0,0 ,d ,d*d,d*d*d,d*d*d*d,d*d*d*d*d,d*d*d*d*d*d,d*d*d*d*d*d*d)
+    var i = 2
+    while(i < n)
+    {
+     println(a*l[i])
+        i++
+    }
+}
